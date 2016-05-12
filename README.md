@@ -64,4 +64,16 @@ EOF
 sudo chown root:  /opt/chef-repo/zabbix.json
 ``` 
 
+* Execute CHEF-SOLO
+``` bash 
+sudo chef-solo -c /opt/chef-repo/solo.rb -j /opt/chef-repo/zabbix.json
+``` 
 
+* Status service
+``` bash 
+ps -ef | grep zabbix
+```   
+
+* Zabbix Interface
+
+  http://[IP]/zabbix
