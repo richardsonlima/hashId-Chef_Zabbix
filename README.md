@@ -41,7 +41,7 @@ sudo chown root: /opt/chef-repo/.chef/knife.rb
 
 * Configure solo.rb (/opt/chef-repo/solo.rb) - Add lines
 ``` bash 
-gsudo touch /opt/chef-repo/solo.rb
+sudo touch /opt/chef-repo/solo.rb
 sudo chown `whoami`: /opt/chef-repo/solo.rb
 sudo cat << EOF > /opt/chef-repo/solo.rb
 file_cache_path "/opt/chef-solo"
