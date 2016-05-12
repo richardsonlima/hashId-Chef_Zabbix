@@ -15,39 +15,31 @@ package "apache2" do
   action :install
 end
 
-package "php" do
+package "php5" do
   action :install
 end
 
-package "libapache2-mod-php7.0" do
+package "libapache2-mod-php5" do
   action :install
 end
 
-package "php-curl" do
+package "php5-curl" do
   action :install
 end
 
-package "php7.0-bcmath" do 
+package "php5-dev" do
   action :install
 end
 
-package "php7.0-mbstring" do 
-  action :install 
-end 
-
-package "php-dev" do
+package "php5-mysql" do
   action :install
 end
 
-package "php-mysql" do
+package "php5-gd" do
   action :install
 end
 
-package "php-gd" do
-  action :install
-end
-
-package "php-xmlrpc" do
+package "php5-xmlrpc" do
   action :install
 end
 
@@ -118,7 +110,7 @@ bash "install_mysql_server" do
   user "root"
   ignore_failure true
   code <<-EOH
-   (echo "mysql-server-5.7 mysql-server/root_password password zabbix" | debconf-set-selections && echo "mysql-server-5.7 mysql-server/root_password_again password zabbix" | debconf-set-selections && apt-get -y --force-yes install mysql-server-5.7)
+   (echo "mysql-server-5.5 mysql-server/root_password password zabbix" | debconf-set-selections && echo "mysql-server-5.5 mysql-server/root_password_again password zabbix" | debconf-set-selections && apt-get -y --force-yes install mysql-server-5.5)
   EOH
 end
 
@@ -170,7 +162,7 @@ cookbook_file "/usr/local/etc/zabbix_server.conf" do
   group "root"
 end
 
-cookbook_file "/etc/php/7.0/apache2/php.ini" do
+cookbook_file "/etc/php5/apache2/php.ini" do
   source "php.ini"
   mode 0644
   owner "root"
@@ -221,4 +213,3 @@ bash "create_dir_apache" do
    chown -R www-data:www-data /var/www/html/zabbix/
   EOH
 end
-
