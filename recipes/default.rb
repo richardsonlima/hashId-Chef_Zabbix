@@ -204,7 +204,7 @@ bash "create_dir_apache" do
   user "root"
   ignore_failure true
   code <<-EOH
-   mkdir /var/www/html/zabbix
+   mkdir -p /var/www/html/zabbix
    cp -a /srv/zabbix-2.4.4/frontends/php/* /var/www/html/zabbix/
    chown -R www-data:www-data /var/www/html/zabbix/
   EOH
