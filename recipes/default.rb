@@ -19,10 +19,6 @@ package "php5" do
   action :install
 end
 
-package "libapache2-mod-php5" do
-  action :install
-end
-
 package "php5-curl" do
   action :install
 end
@@ -55,7 +51,7 @@ package "libssh2-1-dev" do
   action :install
 end
 
-package "php-ssh2" do
+package "libssh2-php" do
   action :install
 end
 
@@ -79,11 +75,19 @@ package "libiksemel-dev" do
   action :install
 end
 
+package "libssh2-php" do
+  action :install
+end
+
 package "snmp" do
   action :install
 end
 
 package "libmysqld-dev" do
+  action :install
+end
+
+package "libmysqld-pic" do
   action :install
 end
 
