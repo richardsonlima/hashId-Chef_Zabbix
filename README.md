@@ -11,7 +11,9 @@ without requiring access to a Chef server.
 chef-solo runs locally and requires that a cookbook 
 
 * Auto install - Fully Automated Zabbix with Chef Solo
+``` bash
 curl -L https://raw.githubusercontent.com/richardsonlima/hashId-Chef_Zabbix/master/install.sh | sudo bash
+```
 
 * Install GIT Client
 ``` bash 
