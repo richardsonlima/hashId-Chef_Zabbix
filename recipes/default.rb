@@ -2,7 +2,7 @@
 # Cookbook Name:: zabbix
 # Recipe:: default
 #
-# Copyright 2014, YOUR_COMPANY_NAME
+# Copyright 2016, YOUR_COMPANY_NAME
 #
 # All rights reserved - Do Not Redistribute
 #
@@ -106,7 +106,7 @@ bash "install_mysql_server" do
   user "root"
   ignore_failure true
   code <<-EOH
-   (echo "mysql-server-5.5 mysql-server/root_password password zabbix" | debconf-set-selections && echo "mysql-server-5.5 mysql-server/root_password_again password zabbix" | debconf-set-selections && apt-get -y --force-yes install mysql-server-5.5)
+   (echo "mysql-server-5.7 mysql-server/root_password password zabbix" | debconf-set-selections && echo "mysql-server-5.7 mysql-server/root_password_again password zabbix" | debconf-set-selections && apt-get -y --force-yes install mysql-server-5.7)
   EOH
 end
 
