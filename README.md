@@ -10,6 +10,9 @@ chef-solo is an open source version of the chef-client that allows using cookboo
 without requiring access to a Chef server. 
 chef-solo runs locally and requires that a cookbook 
 
+* Auto install - Fully Automated Zabbix with Chef Solo
+curl -L https://raw.githubusercontent.com/richardsonlima/hashId-Chef_Zabbix/master/install.sh | sudo bash
+
 * Install GIT Client
 ``` bash 
 sudo apt-get update &&  sudo apt-get install git-core
