@@ -158,7 +158,7 @@ cookbook_file "/usr/local/etc/zabbix_server.conf" do
   group "root"
 end
 
-cookbook_file "/etc/php5/apache2/php.ini" do
+cookbook_file "/etc/php/7.0/cli/php.ini" do
   source "php.ini"
   mode 0644
   owner "root"
