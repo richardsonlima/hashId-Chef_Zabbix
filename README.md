@@ -1,6 +1,6 @@
 HowTo
 ------------
-* Cookbook install and configure: Zabbix Server 2.2.2 + MySQL
+* Cookbook install and configure: Zabbix Server 2.4.4 + MySQL
 * Test: Ubuntu Server 16.04.4 LTS
 * Database Name: zabbixdb (user: zabbix / pass: zabbix)
 * Root MySQL password: zabbix

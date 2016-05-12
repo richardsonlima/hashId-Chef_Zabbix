@@ -15,27 +15,27 @@ package "apache2" do
   action :install
 end
 
-package "php5" do
+package "php" do
   action :install
 end
 
-package "php5-curl" do
+package "php-curl" do
   action :install
 end
 
-package "php5-dev" do
+package "php-dev" do
   action :install
 end
 
-package "php5-mysql" do
+package "php-mysql" do
   action :install
 end
 
-package "php5-gd" do
+package "php-gd" do
   action :install
 end
 
-package "php5-xmlrpc" do
+package "php-xmlrpc" do
   action :install
 end
 
