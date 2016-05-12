@@ -1,4 +1,4 @@
-HowTo
+* HowTo
 ------------
 * Cookbook install and configure: Zabbix Server 2.4.4 + MySQL
 * Test: Ubuntu Server 14.04.3 LTS
@@ -10,14 +10,16 @@ chef-solo is an open source version of the chef-client that allows using cookboo
 without requiring access to a Chef server.
 chef-solo runs locally and requires that a cookbook
 
-* Auto install - Fully Automated Zabbix with Chef Solo ( ATTENTION: Experimental )
+* Auto install - Fully Automated Zabbix with Chef Solo
+- ATTENTION: Experimental :weary:
 ------------
 
 ``` bash
 curl -L https://raw.githubusercontent.com/richardsonlima/hashId-Chef_Zabbix/master/install.sh | sudo bash
 ```
 
-* HandsOn install - Fully Automated Zabbix with Chef Solo ( Works fine )
+* HandsOn install - Fully Automated Zabbix with Chef Solo
+- Works fine :sunglasses:
 ------------
 
 * Install GIT Client
