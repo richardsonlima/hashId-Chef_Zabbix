@@ -27,6 +27,14 @@ package "php-curl" do
   action :install
 end
 
+package "php7.0-bcmath" do 
+  action :install
+end
+
+package "php7.0-mbstring" do 
+  action :install 
+end 
+
 package "php-dev" do
   action :install
 end
