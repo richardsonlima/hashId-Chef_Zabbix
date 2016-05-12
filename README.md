@@ -17,13 +17,14 @@ sudo apt-get update &&  sudo apt-get install git-core
 
 * Install Chef Solo
 ``` bash 
-curl -L https://www.opscode.com/chef/install.sh | sudo bash
+sudo curl -L https://www.opscode.com/chef/install.sh | sudo bash
 ``` 
 
 * Download and configure CHEF-REPO structure
 ``` bash 
 wget http://github.com/opscode/chef-repo/tarball/master
 tar -zxvf master
+sudo mkdir -p /opt/chef-repo
 sudo mv chef-chef-repo-*/ /opt/chef-repo
 sudo mkdir /opt/chef-repo/.chef
 ```
